@@ -56,7 +56,7 @@ export default function Hero() {
 
           {/* Greeting */}
           <div className="font-mono text-xs sm:text-sm text-teal-650 dark:text-cyan-400 tracking-widest uppercase">
-            Hello World! I'm
+            Hello World! I&apos;m
           </div>
 
           {/* Name & Role */}

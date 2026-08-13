@@ -15,7 +15,7 @@ export default function About() {
             </span>
           </h2>
           <p className="text-sm sm:text-lg text-slate-500 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
-            Hi! I'm Akib Dabgar, a passionate Full-Stack Developer with 3+ years of experience creating robust, scalable web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.
+            Hi! I&apos;m Akib Dabgar, a passionate Full-Stack Developer with 3+ years of experience creating robust, scalable web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.
           </p>
         </div>
 

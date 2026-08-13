@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { FolderGit2, Cpu, Database, Check } from "lucide-react";
+import { FolderGit2, Check } from "lucide-react";
 
 const PROJECTS = [
   {

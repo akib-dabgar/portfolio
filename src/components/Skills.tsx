@@ -89,7 +89,6 @@ export default function Skills() {
   const [activeTab, setActiveTab] = React.useState(0);
   const [isPlaying, setIsPlaying] = React.useState(true);
   const [progress, setProgress] = React.useState(0);
-  const timerRef = React.useRef<NodeJS.Timeout | null>(null);
   const progressIntervalRef = React.useRef<NodeJS.Timeout | null>(null);
 
   // Touch Swipe State

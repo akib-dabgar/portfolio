@@ -94,7 +94,7 @@ export default function Contact() {
           </h2>
           <div className="h-1 w-12 bg-teal-500 mx-auto mt-2 rounded-full" />
           <p className="text-sm sm:text-base text-slate-500 dark:text-slate-400 mt-4 max-w-2xl mx-auto">
-            Ready to scale something extraordinary? Let's discuss how my full-stack expertise can deliver value.
+            Ready to scale something extraordinary? Let&apos;s discuss how my full-stack expertise can deliver value.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function Contact() {
           <div className="glass p-8 sm:p-10 rounded-3xl shadow-sm border border-slate-200/50 dark:border-slate-850 flex flex-col justify-between space-y-8">
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-slate-850 dark:text-slate-100">
-                Let's Connect
+                Let&apos;s Connect
               </h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed text-justify">
                 Feel free to reach out for project collaboration, job opportunities, or simply to discuss system designs, databases, or microservice configurations.
