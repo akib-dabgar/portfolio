@@ -2,7 +2,7 @@
 
 Welcome to my professional developer portfolio repository. This application showcases my software engineering experience, core competencies, project history, and architectural expertise in building low-latency, scalable, and responsive web platforms.
 
-🌐 **Live Website:** [https://akib-dabgar.vercel.app](https://akib-dabgar.vercel.app) (Suggested Vercel URL)
+🌐 **Live Website:** [https://portfolio-sigma-ivory-45.vercel.app/](https://portfolio-sigma-ivory-45.vercel.app/)
 
 ---
 
@@ -94,6 +94,6 @@ Welcome to my professional developer portfolio repository. This application show
 
 ## 🚢 Continuous Integration & Deployment (CI/CD)
 
-This project is configured for **Continuous Deployment** via Vercel:
-1. Every commit pushed to the `main` branch on GitHub automatically triggers a Vercel build and release.
-2. Vercel runs optimized Next.js compiles and updates the live site instantly without downtime.
+This project utilizes a robust CI/CD pipeline for maximum reliability:
+1. **GitHub Actions (CI)**: Every push to the `main` branch triggers an automated GitHub Action workflow that strictly validates code quality (`npm run lint`), enforces TypeScript type-safety (`npx tsc --noEmit`), and tests the production build (`npm run build`).
+2. **Vercel Deployment (CD)**: Upon successful commit to the `main` branch, Vercel automatically fetches the latest code, builds the optimized Next.js application, and instantly deploys it to production without downtime.
