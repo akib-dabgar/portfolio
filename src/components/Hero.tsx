@@ -118,8 +118,8 @@ export default function Hero() {
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="/AKIB_DABGAR_FULL_STACK_DEVELOPER_RESUME.pdf"
-                download="AKIB_DABGAR_FULL_STACK_DEVELOPER_RESUME.pdf"
+                href="/Akib-Dabgar-Resume.pdf"
+                download="Akib-Dabgar-Resume.pdf"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-white dark:bg-[#0b0f19]/80 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition duration-200 shadow-md cursor-pointer"
               >
                 <Download className="h-4 w-4" />
