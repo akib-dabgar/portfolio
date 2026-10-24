@@ -8,8 +8,10 @@ const NAV_ITEMS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
+  { label: "Academic", href: "#qualification" },
   { label: "Journey", href: "#experience" },
   { label: "Work", href: "#portfolio" },
+  { label: "Certifications", href: "/certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -27,6 +29,7 @@ export default function Navbar() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 100;
       for (const item of NAV_ITEMS) {
+        if (!item.href.startsWith("#")) continue;
         const el = document.querySelector(item.href);
         if (el) {
           const top = (el as HTMLElement).offsetTop;
@@ -61,7 +64,9 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {NAV_ITEMS.map((item) => {
-              const isActive = activeSection === item.href.substring(1);
+              const isActive = item.href.startsWith("#")
+                ? activeSection === item.href.substring(1)
+                : false;
               return (
                 <a
                   key={item.href}
@@ -116,7 +121,9 @@ export default function Navbar() {
         <div className="md:hidden glass border-t border-slate-200/50 dark:border-slate-800/50 animate-fade-in">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {NAV_ITEMS.map((item) => {
-              const isActive = activeSection === item.href.substring(1);
+              const isActive = item.href.startsWith("#")
+                ? activeSection === item.href.substring(1)
+                : false;
               return (
                 <a
                   key={item.href}

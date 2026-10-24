@@ -1,17 +1,20 @@
-import { GraduationCap, Calendar, BookOpen } from "lucide-react";
+import Link from "next/link";
+import { GraduationCap, Calendar, BookOpen, Award, ArrowRight } from "lucide-react";
 
 const EDUCATION_ITEMS = [
   {
     degree: "Master of Computer Applications (MCA)",
     institution: "Saurashtra University",
     period: "2021 – 2023",
-    description: "Advanced study of computer applications, database management systems, data structures, and software engineering methodologies.",
+    description:
+      "Advanced study of computer applications, database management systems, data structures, and software engineering methodologies.",
   },
   {
     degree: "Bachelor of Computer Applications (BCA)",
     institution: "Shree G.K. & C.K. Bosamia College",
     period: "2018 – 2021",
-    description: "Foundational training in programming languages, web development, algorithms, and system designs.",
+    description:
+      "Foundational training in programming languages, web development, algorithms, and system designs.",
   },
 ];
 
@@ -60,6 +63,18 @@ export default function Qualification() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Dedicated Link to Certifications Page */}
+        <div className="mt-14 text-center">
+          <Link
+            href="/certifications"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-100 dark:bg-slate-900/80 hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 font-semibold text-sm transition-all duration-300 shadow-sm hover:shadow-md group"
+          >
+            <Award className="h-4 w-4 text-teal-500" />
+            <span>View Verified Licenses & Technical Certifications</span>
+            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
       </div>
     </section>
