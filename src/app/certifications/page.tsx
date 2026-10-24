@@ -67,7 +67,9 @@ export default function CertificationsPage() {
   const { theme, setTheme } = useTheme();
   const [selectedCert, setSelectedCert] = React.useState<Certificate | null>(null);
 
+  // Avoid hydration mismatch by waiting until mounted on client
   React.useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 
